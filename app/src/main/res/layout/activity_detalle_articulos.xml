@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondo1"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_detalle_articulos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content">
+
+
+        <ImageButton
+            android:id="@+id/btnl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bacl"
+            android:onClick="vol"
+            android:src="@drawable/bacl"></ImageButton>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="30dp"
+            android:text="RESULTADOS FINALES"
+            android:textColor="#020000"
+            android:textColorHighlight="#8EA7ED"
+            android:textColorLink="#428AD6"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="308dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="10dp"
+                android:text="Código"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/tv_codg"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingTop="0dp"
+                android:layout_width="match_parent"
+                android:text="xxxx"
+                android:textColor="#304FFE"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingTop="10dp"
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:text="Descripción"
+                android:textColor="#090000"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingTop="0dp"
+                android:layout_width="match_parent"
+                android:text="xxxx"
+                android:textColor="#304FFE"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingTop="10dp"
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:text="Precio"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_precio"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingTop="0dp"
+                android:layout_width="match_parent"
+                android:text="0.00"
+                android:textColor="#304FFE"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                app:cardBackgroundColor="#77A7ECE4"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="51dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/scol"
+                        android:orientation="horizontal"
+                        android:padding="6dp">
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="38dp"
+                            android:src="@drawable/ic_baseline_edit_24"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:padding="8dp"
+                            android:text="Resultado de la búsqueda "
+                            android:textColor="#000000"
+                            android:textSize="17dp"
+                            android:textStyle="bold"></TextView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvUsna"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:paddingTop="30dp"
+                        android:paddingBottom="10dp"
+                        android:text="Código"
+                        android:textColor="#000"
+                        android:textColorHighlight="#9CA8EA"
+                        android:textColorLink="#7181DC"
+                        android:textCursorDrawable="@drawable/scol"
+                        android:textSize="17dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_cod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:text="xxxx"
+                        android:textColor="#304FFE"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvUsna2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:text="Descripcion"
+                        android:textColor="#000"
+                        android:textSize="17dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_desc1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="10dp"
+                        android:text="xxxx"
+                        android:textColor="#304FFE"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvUsna3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:text="Precio"
+                        android:textColor="#000"
+                        android:textSize="17dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_precioc1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="10dp"
+                        android:text="0.00"
+                        android:textColor="#304FFE"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_fecha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="10dp"
+                        android:text="Fecha de Origen"
+                        android:textColor="#304FFE"
+                        android:textStyle="bold"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/irreport"
+                            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Ver"
+                            android:textColor="#DD0B0B"
+                            android:textColorHighlight="#E66565"
+                            android:textColorLink="#F13B3B"></Button>
+
+                        <Button
+                            android:id="@+id/ireditinf"
+                            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Editar"
+                            android:textColor="#F10808"
+                            android:textColorHighlight="#DA7272"
+                            android:textColorLink="#DC5A5A"></Button>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="colorPrimarysub">#304FFE</color>
+<color name="colorPrimary">#304FFE</color>
+<color name="colorPrimaryDark">#304FFE</color>
+<color name="colorAccent">#D50000</color>
+<color name="white">#A1FDFCFC</color>
+<color name="sub">#1E000000</color>
+<color name="sub2">#FF8D8D</color>
+<color name="slave">#8E8C8C</color>
+
+</resources>
