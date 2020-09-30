@@ -52,13 +52,9 @@
                 android:layout_marginBottom="30dp"
                 android:text="Lista de Articulos Varios"
                 android:textColor="#000104"
-
                 android:textSize="20dp"
                 android:textStyle="italic">
-
             </TextView>
-
-
         </LinearLayout>
 
         <ListView
@@ -67,7 +63,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
             android:background="@drawable/sal">
-
         </ListView>
 
         <TextView
@@ -78,7 +73,6 @@
             android:layout_marginBottom="20dp"
             android:text="Autor Julissa Salinas"
             android:textColor="#fff"
-
             android:textSize="10dp"
             android:textStyle="italic">
 

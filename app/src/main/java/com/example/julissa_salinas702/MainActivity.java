@@ -130,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
         });
         adios.show();
     }
+
     public void limpiardat(){
         codju.setText(null);
         descrips.setText(null);

@@ -8,5 +8,6 @@
 <color name="sub">#1E000000</color>
 <color name="sub2">#FF8D8D</color>
 <color name="slave">#8E8C8C</color>
-
+    <color name="green">#25CD25</color>
+    <color name="brown">#BD1212</color>
 </resources>

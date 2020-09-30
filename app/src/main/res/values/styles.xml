@@ -16,4 +16,10 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+
+    <style name="custom_floating_button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/custom_floating_button</item>
+    </style>
+
 </resources>
