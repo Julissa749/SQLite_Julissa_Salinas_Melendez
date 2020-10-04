@@ -9,11 +9,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.getbase.floatingactionbutton.FloatingActionButton;
-
 import entidades.ConexionSQLite;
 import entidades.DTO;
+import com.getbase.floatingactionbutton.FloatingActionButton;
 
 public class activity_consulta extends AppCompatActivity {
     private Spinner espin;
@@ -25,7 +23,7 @@ public class activity_consulta extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consulta);
-        //menu
+        //inicio del menu
         FloatingActionButton fab1 = findViewById(R.id.uno);
         FloatingActionButton fab2 = findViewById(R.id.dos);
         FloatingActionButton fab3 = findViewById(R.id.tres);
@@ -47,7 +45,8 @@ public class activity_consulta extends AppCompatActivity {
                 Toast.makeText(activity_consulta.this,"retornar",Toast.LENGTH_SHORT).show();
             }
         });
-        //menu final
+
+        //fin del menu
         espin = (Spinner)findViewById(R.id.spinn);
         cod = (TextView) findViewById(R.id.codg);
         dec = (TextView) findViewById(R.id.descripc);
@@ -65,9 +64,9 @@ public class activity_consulta extends AppCompatActivity {
                     sueño.setText("Precio: "+conexion.consultarListaArticulos().get(i-1).getPrecio());
                 }else
                     {
-                    cod.setText("El Codigo esta Vacio");
-                    dec.setText("Descripción esta Vacio");
-                        sueño.setText("Precio esta Vacio");
+                    cod.setText("Codigo  Vacio");
+                    dec.setText("Descripción Vacio");
+                        sueño.setText("Precio Vacio");
                 }
             }
             @Override

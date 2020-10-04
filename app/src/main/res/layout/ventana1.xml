@@ -9,7 +9,7 @@
     android:layout_height="wrap_content">
     <TextView
         android:layout_width="match_parent"
-        android:text="Busqueda por código"
+        android:text="Ingrese su código Para buscar"
         android:textColor="#000000"
         android:textSize="20dp"
         android:textStyle="italic"
@@ -62,8 +62,8 @@
         <ImageButton
             android:id="@+id/cancelbusc"
             android:layout_width="wrap_content"
-            android:src="@drawable/cancel"
-            android:layout_height="wrap_content">
+            android:layout_height="71dp"
+            android:src="@drawable/ic_yester">
 
         </ImageButton>
     </LinearLayout>

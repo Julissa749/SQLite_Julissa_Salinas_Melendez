@@ -28,7 +28,7 @@ public class modal_Toast_Custom extends AppCompatActivity{
     androidx.appcompat.app.AlertDialog.Builder dialogo;
     AlertDialog.Builder dialogo1;
 
-    public void mitarea (final Context context){
+    public void julissa (final Context context){
         myDialog = new Dialog(context);
         myDialog.setContentView(R.layout.ventana1);
         myDialog.setTitle("Modal");

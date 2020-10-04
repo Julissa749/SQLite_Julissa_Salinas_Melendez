@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.bacl));
         toolbar.setTitleTextColor(getResources().getColor(R.color.white));
@@ -109,7 +110,10 @@ public class MainActivity extends AppCompatActivity {
             }
         }catch (Exception o){
         }
+
+
     }
+
     private void comfirmacion(){
         String msm = "¿Desea Salir?";
         adios = new AlertDialog.Builder(MainActivity.this);
@@ -130,7 +134,6 @@ public class MainActivity extends AppCompatActivity {
         });
         adios.show();
     }
-
     public void limpiardat(){
         codju.setText(null);
         descrips.setText(null);
@@ -160,12 +163,14 @@ public class MainActivity extends AppCompatActivity {
             Intent listVAct = new Intent(MainActivity.this,listview_articulos.class);
             startActivity(listVAct);
             return  true;
+
         }else if(id == R.id.menu_5){
             Intent Recycler = new Intent(MainActivity.this, Lista_articulos_recyclerview.class);
             startActivity(Recycler);
             return true;
 
         }
+
         return super.onOptionsItemSelected(item);
     }
 
